@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
 function Main() {
