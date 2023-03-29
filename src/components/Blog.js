@@ -18,7 +18,7 @@ function Blog() {
             </Flex>
             <Grid mt='38px' gap='25px' templateColumns='repeat(6, 1fr)' w='100%'>
                 {
-                    [1, 2, 3, 4, 5, 6].map((item, index) => <GridItem key={index} colSpan={{ base: '3', md: '3', lg: '3' }}>
+                    [1, 2, 3, 4, 5, 6].map((item, index) => <GridItem key={index} colSpan={{ base: '3', md: '3', lg: '3' ,xl: '2' }}>
                         <Box w='354px' h='221px' bg='rgba(7, 123, 255, 0.1)' border='1px solid rgba(7, 123, 255, 0.5)' borderRadius='5px' />
                         <Text mt='11px' fontSize='20px' fontWeight='500' lineHeight='24px' letterSpacing='-0.02em' fontFamily='Figtree' color='#111822'>
                             Blog Title appear Here
