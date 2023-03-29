@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
 function Main() {
@@ -38,14 +38,14 @@ function Main() {
                 </Flex>
             </Box>
             <Box maxW='588px' mx='auto' mt='54px' h='0px' border='.5px solid #D9D8D6' />
-            <Grid templateColumns='repeat(4, 1fr)' gap='16.16px' mt='35px' maxW='1192px' mx='auto'>
+            <Grid templateColumns='repeat(4, 1fr)' gap='16.16px' mt='35px' maxW='1192px' mx={{ base: 'auto', md: 'auto', lg: 'auto' }} px={{ base: '16px', md: '16px', lg: '0' }}>
                 {features.map((feature) => (
-                    <Box key={feature.id} display='flex' alignItems='center' gap='16px' bg={feature.backgroundColor} borderRadius='5px'  border={`1px solid ${feature.borderColor}`} p='24.16px'>
+                    <GridItem key={feature.id} display='flex' alignItems='center' gap='16px' bg={feature.backgroundColor} borderRadius='5px'  border={`1px solid ${feature.borderColor}`} p='24.16px' colSpan={{ base: 2, md: 2, lg: 1 }}>
                         <Image src={feature.image} w='40px' h='40px' ml='10px' />
                         <Text color='#111822' fontSize='18px' fontWeight='400' lineHeight='22px' letterSpacing='-0.02em' fontFamily='Figtree' textDecoration='none' opacity={0.8} >
                             {feature.description.slice(0, 12)} &nbsp; &nbsp; &nbsp; {feature.description.slice(12, 100)}
                         </Text>
-                    </Box>
+                    </GridItem>
                 ))}
             </Grid>
         </Box>

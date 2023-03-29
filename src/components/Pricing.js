@@ -10,8 +10,8 @@ function Pricing() {
             <Text mt='10px' color='#111822' fontSize='18px' fontWeight='500' lineHeight='22px' maxW='465px' mx='auto' letterSpacing='-0.02em' fontFamily='Figtree' textAlign='center' opacity='0.5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
             </Text>
-            <Flex columnGap='16.16px' rowGap='27px' mt='99px' maxW='1192px' mx='auto' justifyContent='center'>
-                <Box w='344px' h='447px' bg='rgba(30, 30, 30, 0.01)' border='1px solid rgba(30, 30, 30, 0.1)' borderRadius='5px' px='28px' py='26px'>
+            <Flex columnGap='16.16px' rowGap='27px' mt='99px' maxW='1192px' mx='auto' justifyContent='center' flexDirection={{ base: 'column', md: 'column', lg: 'row' }}>
+                <Box w='344px' h='447px' bg='rgba(30, 30, 30, 0.01)' border='1px solid rgba(30, 30, 30, 0.1)' borderRadius='5px' px='28px' py='26px' mx={{ base: 'auto', md: 'auto', lg: '0' }}>
                     <Flex justifyContent='space-between'>
                         <Grid gap='8px'>
                             <Image src='./images/price1.png' alt='Feature' w='40px' h='40px' />
@@ -92,7 +92,7 @@ function Pricing() {
                         <Box bg='#0566D4' roundedBottom='10px' w='288px' h='14px' mt='-9px' mx='auto' />
                     </Box>
                 </Box>
-                <Box w='344px' h='495px' bg='rgba(22, 209, 19, 0.1)' border='1px solid #16D113' borderRadius='5px' px='25px' py='22.5px'>
+                <Box w='344px' h='495px' bg='rgba(22, 209, 19, 0.1)' border='1px solid #16D113' borderRadius='5px' px='25px' py='22.5px' mx={{ base: 'auto', md: 'auto', lg: 0 }} mt={{ base: '20px', md: '0' }}>
                     <Flex justifyContent='space-between'>
                         <Grid gap='8px'>
                             <Image src='./images/price2.png' alt='Feature' w='40px' h='40px' />

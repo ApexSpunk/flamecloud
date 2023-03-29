@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function Testimonials() {
@@ -10,8 +10,8 @@ function Testimonials() {
             <Text mt='10px' color='#111822' fontSize='18px' fontWeight='500' lineHeight='22px' maxW='465px' mx='auto' letterSpacing='-0.02em' fontFamily='Figtree' textAlign='center' opacity='0.5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
             </Text>
-            <Grid templateColumns='repeat(3, 1fr)' gap='17px' mt='34px' maxW='1192px' mx='auto'>
-                <Box w='386px' h='248px' bg='rgba(30, 30, 30, 0.01)' border='1px solid rgba(22, 209, 19, 0.5)' borderRadius='5px' py='29px' px='25px'>
+            <Grid templateColumns='repeat(3, 1fr)' gap='17px' mt='34px' maxW='1192px' mx={{ base: 'auto', md: 'auto', lg: 'auto' }} px={{ base: '16px', md: '16px', lg: '0' }}>
+                <GridItem bg='rgba(30, 30, 30, 0.01)' border='1px solid rgba(22, 209, 19, 0.5)' borderRadius='5px' py='29px' px='25px' colSpan={{ base: '3', md: '3', lg: '1' }}>
                     <Box display='flex' flexDirection='column' alignItems='flex-start' gap='8px'>
                         <Box>
                             <Image src='./images/starts.png' w='119px' h='23.8px' />
@@ -31,9 +31,9 @@ function Testimonials() {
                             </Flex>
                         </Box>
                     </Box>
-                </Box>
+                </GridItem>
                 {
-                    new Array(2).fill(0).map((_, index) => <Box key={index} w='386px' h='248px' bg='rgba(30, 30, 30, 0.01)' border='1px solid rgba(22, 209, 19, 0.5)' borderRadius='5px' py='29px' px='25px'>
+                    new Array(2).fill(0).map((_, index) => <GridItem key={index} bg='rgba(30, 30, 30, 0.01)' border='1px solid rgba(22, 209, 19, 0.5)' borderRadius='5px' py='29px' px='25px' colSpan={{ base: '3', md: '3', lg: '1' }}>
                         <Box display='flex' flexDirection='column' alignItems='flex-start' gap='8px'>
                             <Box>
                                 <Image src='./images/starts.png' w='119px' h='23.8px' />
@@ -53,7 +53,7 @@ function Testimonials() {
                                 </Flex>
                             </Box>
                         </Box>
-                    </Box>
+                    </GridItem>
                     )
                 }
             </Grid>
