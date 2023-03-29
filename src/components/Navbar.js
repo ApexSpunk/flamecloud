@@ -7,9 +7,9 @@ function Navbar() {
         <Box>
             <Box maxW='1192px' h='58px' mx='auto' alignItems='center' display='flex'>
                 <Box>
-                    <Image src='./images/logo.png' alt='Logo' w='217px' mx='5px' />
+                    <Image src='./images/logo.png' alt='Logo' w='217px' mx='8px' />
                 </Box>
-                <Box ml='30px' display='flex' flexDirection='row' alignItems='flex-start' gap='30px'>
+                <Box ml='25px' display='flex' flexDirection='row' alignItems='flex-start' gap='30px'>
                     <Text as={Link} to='/' color='#111822' fontSize='16px' fontWeight='400' lineHeight='19px' letterSpacing='-0.02em' fontFamily='Figtree' textDecoration='none'>
                         Pricing
                     </Text>
@@ -32,7 +32,7 @@ function Navbar() {
                         Blogs
                     </Text>
                 </Box>
-                <Box ml='auto' mr='5px' display='flex' flexDirection='row' alignItems='center' gap='30px'>
+                <Box ml='auto' mr='8px' display='flex' flexDirection='row' alignItems='center' gap='30px'>
                     <Flex gap='22px' alignItems='center'>
                         <Flex gap='5px' alignItems='center'>
                             <Image src='./images/discord 1.png' alt='Discord' w='16px' h='16px' />
