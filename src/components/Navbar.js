@@ -44,7 +44,6 @@ function Navbar() {
                         <Text as={Link} to='/' color='#111822' fontSize='16px' fontWeight='400' lineHeight='19px' letterSpacing='-0.02em' fontFamily='Figtree' textDecoration='none'>
                             Log in
                         </Text>
-
                     </Flex>
                     <Button bg='#077BFF' borderRadius='5px' w='127px' h='39px' color='#fff' fontSize='16px' fontWeight='500' lineHeight='19px' letterSpacing='-0.02em' fontFamily='Figtree'>
                         Get Started

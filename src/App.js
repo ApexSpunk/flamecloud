@@ -7,6 +7,7 @@ import Features from './components/Features';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Pricing />
       <Testimonials />
       <Blog />
+      <Footer />
     </Box>
   );
 }
