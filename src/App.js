@@ -4,10 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    // <Allroutes />
-    <h1>
-        Hello World
-    </h1>
+    <Allroutes />
   )
 }
 
