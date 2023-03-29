@@ -1,26 +1,14 @@
-import logo from './logo.svg';
+import React from 'react'
+import Allroutes from './pages/Allroutes';
 import './App.css';
-import { Box } from '@chakra-ui/react';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
-import Features from './components/Features';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
-import Blog from './components/Blog';
-import Footer from './components/Footer';
 
 function App() {
   return (
-    <Box>
-      <Navbar />
-      <Main />
-      <Features />
-      <Pricing />
-      <Testimonials />
-      <Blog />
-      <Footer />
-    </Box>
-  );
+    // <Allroutes />
+    <h1>
+        Hello World
+    </h1>
+  )
 }
 
-export default App;
+export default App
